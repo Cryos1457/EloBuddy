@@ -365,6 +365,18 @@ namespace AutoSpellUp
                         Tipo = " Lane";
                     }
                     break;
+                case "Rammus":
+                    if (smite != null && smite.Slot != SpellSlot.Unknown)
+                    {
+                        AbilitySequence = new[] { 2, 1, 2, 3, 3, 4, 3, 3, 3, 2, 4, 2, 2, 1, 1, 4, 1, 1 };
+                        Tipo = " Jungler";
+                    }
+                    else
+                    {
+                        AbilitySequence = new[] { 2, 3, 1, 2, 2, 4, 2, 3, 2, 3, 4, 3, 3, 1, 1, 4, 1, 1 };
+                        Tipo = " Lane";
+                    }
+                    break;
                 case "Orianna":
                     AbilitySequence = new[] { 1, 2, 3, 1, 1, 4, 1, 2, 1, 2, 4, 2, 2, 3, 3, 4, 3, 3 };
                     break;
@@ -376,17 +388,6 @@ namespace AutoSpellUp
                     break;
                 case "Quinn":
                     AbilitySequence = new[] { 1, 3, 2, 1, 1, 4, 1, 3, 1, 3, 4, 3, 3, 2, 2, 4, 2, 2 };
-                    break;
-                case "Rammus":
-                    if (smite != null && smite.Slot != SpellSlot.Unknown)
-                    {
-                        AbilitySequence = new[] { 2, 1, 2, 3, 3, 4, 3, 3, 3, 2, 4, 2, 2, 1, 1, 4, 1, 1 };
-                        Tipo = " Jungler";
-                    }
-                    else
-                    {
-                        AbilitySequence = new[] { 2, 3, 1, 2, 2, 4, 2, 3, 2, 3, 4, 3, 3, 1, 1, 4, 1, 1 };
-                        Tipo = " Lane";
                     break;
                 case "Renekton":
                     AbilitySequence = new[] { 1, 2, 3, 1, 1, 4, 1, 3, 1, 3, 4, 3, 3, 2, 2, 4, 2, 2 };
